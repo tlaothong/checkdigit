@@ -38,11 +38,11 @@ namespace CheckDigitWeb.Controllers
             n %= 10;
             var d1 = n;
 
-            var d = d7 + d6 * 2 + d5 * 3 + d4 * 4 + d3 * 5 + d2 * 6 + d7 * 7;
+            var d = d7 + d6 * 2 + d5 * 3 + d4 * 4 + d3 * 5 + d2 * 6 + d1 * 7;
             var chk = 9 - (d % 10);
             var r = new CheckDigitResult
             {
-                Input = string.Format("{0:0000000}", n),
+                Input = string.Format("{0:0000000}", num2check % 10_000_000),
                 Lines = new []
                 {
                     string.Format("1 x {0} = {1}", d7, d7),
@@ -54,7 +54,7 @@ namespace CheckDigitWeb.Controllers
                     string.Format("7 x {0} = {1}", d1, d1 * 7),
                     string.Format("Sum : {0}", d),
                     string.Format("CheckDigit: {0} <== 10 complimentary of sum", chk),
-                    string.Format("Number with check digit: {0:0000000}{1}", num2check, chk)
+                    string.Format("Number with check digit: {0:0000000}{1}", num2check % 10_000_000, chk)
                 }
             };
 
