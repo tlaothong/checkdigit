@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2003
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheckDigitWeb", "CheckDigitWeb\CheckDigitWeb.csproj", "{63FC1395-474C-4915-A081-EAD1EC4CCCB3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{63FC1395-474C-4915-A081-EAD1EC4CCCB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63FC1395-474C-4915-A081-EAD1EC4CCCB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63FC1395-474C-4915-A081-EAD1EC4CCCB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63FC1395-474C-4915-A081-EAD1EC4CCCB3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DB7FB7AB-60BB-4065-A690-013C03E33BC6}
+	EndGlobalSection
+EndGlobal

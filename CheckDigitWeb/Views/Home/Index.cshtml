@@ -1,0 +1,29 @@
+﻿@model CheckDigitWeb.Controllers.CheckDigitResult
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+<div class="row">
+    <div class="col-md-9">
+        <h2>Check Digit Sample</h2>
+
+        <form method="post">
+            <input type="number" name="num2check" />
+            <button type="submit">สร้าง Check Digit</button>
+        </form>
+
+        @if (Model != null)
+        {
+            <p>
+                Input: @Model.Input
+            </p>
+            <ul>
+                @foreach (var line in Model.Lines)
+                {
+                    <li>@line</li>
+                }
+            </ul>
+        }
+    </div>
+</div>
